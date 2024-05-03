@@ -40,8 +40,8 @@ ul li {
 }
 
 .link3 a {
-  color: revert;
-  padding: revert;
+  color: unset;
+  padding: unset;
 }
 .content1 {
   border: 1px solid black;
