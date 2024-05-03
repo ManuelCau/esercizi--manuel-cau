@@ -1,0 +1,2 @@
+Ho creato delle cartelle con dentro i relativi files css e html, il nome di ogni cartella è relativo al nome dell'esercizio sulla piattaforma.
+Per qualsiasi problema non esitare a contattarmi @manuel_cau
