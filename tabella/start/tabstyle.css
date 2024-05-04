@@ -1,0 +1,33 @@
+table {
+  border: 1px solid #263238;
+  width: 50%;
+}
+caption {
+  font-weight: bold;
+  font-size: 18px;
+  color: #263238;
+  margin-bottom: 10px;
+}
+th {
+  background-color: #455a64;
+  color: white;
+  font-weight: 700;
+}
+tr:nth-child(even) {
+  background-color: #eceff1;
+}
+tr:nth-child(odd) {
+  background-color: #b0bec5;
+}
+tfoot td {
+  background-color: #78909c;
+  font-weight: 800;
+}
+td:nth-child(2) {
+  color: #003300;
+  text-align: right;
+}
+td:nth-child(3) {
+  color: #7f0000;
+  text-align: right;
+}
