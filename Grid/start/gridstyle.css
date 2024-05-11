@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+.calcolatrice {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  
+  padding: 1px;
+  background-color: rgb(145, 144, 144);
+  width: 300px;
+  border-radius: 10px;
+}
+.zero {
+  grid-column: 1 / span 4;
+  grid-row: 1;
+  background-color: rgb(77, 77, 88);
+  color: white;
+  font-size: 25px;
+  text-align: right;
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+}
+.operazioni {
+  grid-column: 1 / span 4;
+  grid-row: 1;
+  background-color: rgb(132, 129, 129);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.tastiera {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column: 1 / span 4;
+  grid-row: 5;
+}
+.num {
+  background-color: rgb(229, 230, 235);
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 2px solid rgb(163, 163, 163);
+  border-collapse: collapse;
+}
+.numeri {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+.num:nth-child(10) {
+  border-radius: 0 0 0 10px;
+}
+
+.uguale {
+  background-color: rgb(255, 125, 125);
+  display: flex;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column: 4;
+  grid-row: 6 / 4;
+  margin-top: 55px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 10px;
+  border: 2px solid rgb(163, 163, 163);
+}
+.op {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  border: 2px solid rgb(163, 163, 163);
+  width: 80px;
+  border-collapse: collapse;
+  height: 50px;
+}
