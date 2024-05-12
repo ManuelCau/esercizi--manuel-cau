@@ -71,16 +71,15 @@ button:hover {
 
 .hamburger-menu {
   color:rgb(152, 43, 43);
-  display: none; /* Nasconde il menu hamburger per impostazione predefinita */
+  display: none; 
 }
 
-/* Media query per schermi con larghezza massima di 768 pixel */
 @media (max-width: 768px) {
   .barra {
-    display: none; /* Nasconde il menu principale */
+    display: none; 
   }
   
   .hamburger-menu {
-    display: block; /* Mostra il menu hamburger */
+    display: block;
   }
 }
