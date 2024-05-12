@@ -61,7 +61,7 @@ input {
   padding: 10px;
   border-radius: 8px;
   font-weight: 550;
-  margin-left:60px
+  margin-left: 60px;
 }
 button:hover {
   background-color: green;
@@ -70,15 +70,22 @@ button:hover {
 }
 
 .hamburger-menu {
+
+  display: none;
+
   color:rgb(152, 43, 43);
   display: none; 
+
 }
 
 @media (max-width: 768px) {
   .barra {
+
+    display: none;
+
     display: none; 
+
   }
-  
   .hamburger-menu {
     display: block;
   }
