@@ -46,7 +46,15 @@
       const titleName = document.querySelector(".title-name");
       const button = document.querySelector(".btn");
 
-      button.addEventListener("click", (event) => {
+      //evento per ripescare i dati salvati dal local chiedendogli di cercare il dato legato a .title-name
+      window.addEventListener("load", () => {
+        const savedName = localStorage.getItem(".title-name");
+        if (".title-name") {
+          titleName.innerText = savedName;
+        }
+      });
+
+      button.addEventListener("click", () => {
         const name = document.querySelector(".firstname").value;
         if (name !== "") {
           titleName.innerText = name;

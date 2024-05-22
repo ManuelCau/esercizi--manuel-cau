@@ -43,7 +43,12 @@
           document.querySelector(".firstname").value = "";
         }
         sessionStorage.setItem(".title-name", name);
-      });</script>
+      });
+      const savedUserName = sessionStorage.getItem('.title-name');
+      if(savedUserName){
+        
+      }
+      </script>
 </body>
 
 </html>
