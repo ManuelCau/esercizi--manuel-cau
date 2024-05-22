@@ -43,13 +43,17 @@
     <button class="btn">Salva</button>
     <p class="printedform"></p>
     <script>
-      function myform() {
-        const mail = document.querySelector(".email");
-        const name = document.querySelector(".firstname");
-        const lastname = document.querySelector(".lastname");
-        const print = document.querySelector(".printedform");
-        
-      }
+      const titleName = document.querySelector(".title-name");
+      const button = document.querySelector(".btn");
+
+      button.addEventListener("click", (event) => {
+        const name = document.querySelector(".firstname").value;
+        if (name !== "") {
+          titleName.innerText = name;
+          document.querySelector(".firstname").value = "";
+        }
+        localStorage.setItem(".title-name", name);
+      });
     </script>
   </body>
 </html>
